@@ -1,0 +1,197 @@
+/** @format */
+:root {
+	--box-shadow-: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+.container {
+	/* width: 100%; */
+	height: 100%;
+	max-width: 1200px;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+	padding: 1rem;
+}
+.wrapper .logo {
+	font-size: 7rem;
+	color: #023047;
+}
+.title {
+	font-size: 1.3rem;
+	padding: 0.5rem 0;
+	font-family: "Nunito", sans-serif;
+}
+.title h1 {
+	margin: 0;
+}
+.title p {
+	margin: 0;
+	color: #41521f;
+	font-weight: bold;
+}
+
+.grid {
+	place-items: center;
+	height: calc(100vh - 200px);
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.first-grid {
+	background: url("../assets/background/italy.avif");
+	background-position: center;
+	background-size: cover;
+	border-radius: 1rem;
+}
+.second-grid {
+	background: url("../assets/thai/thai-food-shrimp-spicy-fish-sauce_1150-38079.avif");
+	background-position: center;
+	background-size: cover;
+	border-radius: 1rem;
+}
+.third-grid {
+	background: url("../assets/french/bb1a5ec0666614721f4119e198f085e5.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 1rem;
+}
+.fourth-grid {
+	background: url("../assets/background/jpnbg.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 1rem;
+}
+.content {
+	width: 80%;
+	height: 80%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	box-shadow: var(--box-shadow-);
+	padding: 1.5rem;
+}
+.text h1 {
+	margin: 0;
+}
+.content img {
+	object-fit: cover;
+	width: 50%;
+	height: auto;
+	border-radius: 1rem;
+	margin: 1rem;
+}
+.content button {
+	border: none;
+	outline: none;
+	color: white;
+	padding: 1.5rem;
+	border-radius: 1rem;
+	background-color: #023047;
+}
+.text {
+	font-family: "Nunito";
+	font-size: 1.5rem;
+	margin: 2rem;
+	text-align: center;
+	font-weight: bold;
+	backdrop-filter: blur(10px);
+	border-radius: 1.5rem;
+	box-shadow: var(--box-shadow-);
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 350px;
+	background-color: rgba(211, 209, 209, 0.405);
+}
+
+@media (max-width: 1000px) {
+	.title {
+		font-size: 1rem;
+	}
+	.grid-container {
+		padding: 2rem;
+	}
+	.grid {
+		padding: 2rem;
+	}
+
+	.content {
+		height: 80%;
+	}
+}
+@media (max-width: 1280px) and (min-width: 800px) {
+	.grid {
+		margin: 2rem;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+	}
+
+	.text {
+		padding: 2rem;
+		text-align: center;
+		width: 210px;
+	}
+	.text h1 {
+		margin: 0;
+	}
+	.text p {
+		margin: 0;
+		padding: 0.5rem;
+	}
+	.text button {
+		margin: 0.5rem;
+	}
+}
+@media (max-width: 875px) {
+	.title {
+		font-size: 0.8rem;
+	}
+	.logo {
+		font-size: 3rem;
+	}
+	.grid-container {
+		padding: 2rem;
+	}
+	.grid {
+		padding: 2rem;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+	}
+	.content img {
+		width: 80px;
+		height: 80px;
+	}
+	.text {
+		text-align: center;
+	}
+	.text h1 {
+		margin: 0;
+	}
+	.text p {
+		margin: 0;
+		padding: 0.5rem;
+	}
+	.text button {
+		margin: 0.5rem;
+	}
+	.text {
+		width: 200px;
+	}
+}

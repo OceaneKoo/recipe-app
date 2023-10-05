@@ -1,0 +1,13 @@
+/** @format */
+
+.icon {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin: 2rem;
+	padding: 1rem;
+	color: white;
+	background-color: #023047;
+	position: absolute;
+}
